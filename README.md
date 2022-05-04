@@ -9,6 +9,8 @@
 <div id='intro' />
 
 ## Introducción
+  
+ <img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/Nginx_logo.svg.png" width="400" alt="logo nginx">
 
 >Esta práctica se hara uso Nginx, un servidor web ligero y eficiente. Con las bases de nuestro servidor procederemos a configurar dos virtual hosts y acceder a ellos usando diferentes subdominios.
 
@@ -25,12 +27,20 @@
 
 ## Instalación Nginx
 
-La instala
+La instalación de Nginx en las distribuciones de linux es muy fácil y rápido.
+Vamos a la terminal e introducimos el siguiente comando.
 
 ```bash
 apt install nginx
 ```
 
+Si todo a salido bien al introducir en nuestro navegador ``localhost`` o ``127.0.0.1`` debería devolver los siguiente:
+
+<center>
+  
+![bienvenida nginx]()
+
+</center>
 
 <div id='confi' />
 
