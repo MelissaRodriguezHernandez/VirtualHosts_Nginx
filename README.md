@@ -46,7 +46,19 @@ Si todo a salido bien al introducir en nuestro navegador ``localhost`` o ``127.0
 ## Configuración Virtual Hosts
 
 Para empezar debemos ir al directorio *sites-available* de nginx y crearemos nuestros archivos para la configuración de los dos hosts. El nombre sera creado a base de esta plantilla *nombre_descriptivo_página.nombre_autor.com*.
-El nombre descriptivo dependeran del codigo que elegimos (link de las paginas en el apartado de recursos).
+El nombre descriptivo dependeran de las páginas que elegimos.
+
+Las páginas elegidas para esta practica són:
+
+Puzzle:
+
+- [Link de la página](https://onehtmlpagechallenge.com/entries/tiles.html)
+- [Link del código](https://github.com/Metroxe/one-html-page-challenge/blob/master/entries/tiles.html)
+
+Screen
+
+- [Link de la página](https://onehtmlpagechallenge.com/entries/my-screen-resolution.html)
+- [Link del código](https://github.com/Metroxe/one-html-page-challenge/blob/master/entries/my-screen-resolution.html)
 
 ```bash
 sudo cd /etc/nginx/sites-available
