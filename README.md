@@ -93,7 +93,7 @@ Modificaciones(esto se hara por cada uno de los archivos):
 
 <img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/configuracion%20screen.png" width="">
 
-Ahora procederemos a crear los mismo archivos pero en este caso en el directorio *sites-enabled*, estos archivos deberan tener el mismo nombre que los anteriores ya que deben correlacionarse, como se ve en la siguiente imagen.
+Ahora procederemos a crear los mismo archivos pero en este caso en el directorio *sites-enabled*, estos archivos deberan tener el mismo nombre que los anteriores ya que estan correlacionados, como se ve en la siguiente imagen.
 
 ```bash
 sudo cp default puzzle.melissarh.com
