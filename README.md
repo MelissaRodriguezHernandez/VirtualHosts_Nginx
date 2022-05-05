@@ -109,7 +109,7 @@ Para que todos estos archivos se guarden correctamente deberemos usar este coman
 sudo -s release nginx
 ```
 
-Ahora procederemos a introducir nuestro código html.Para esto deberemos ir al directorio *www* y crear las carpetas para cada web los cuales almacenaran el archivo *index.html* (nuestro código).
+Ahora procederemos a introducir nuestro código html. Para esto deberemos ir al directorio *www* y crear las carpetas necesarias para cada web, lass cuales almacenaran el archivo *index.html* (nuestro código).
 
 ```bash
 cd /var/www
