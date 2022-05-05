@@ -50,15 +50,15 @@ El nombre descriptivo dependeran de las páginas que elegimos.
 
 Las páginas elegidas para esta practica són:
 
-Puzzle:
+| Puzzle:                                                                                                |
+|--------------------------------------------------------------------------------------------------------|
+| - [Link de la página](https://onehtmlpagechallenge.com/entries/tiles.html)                             |
+| - [Link del código](https://github.com/Metroxe/one-html-page-challenge/blob/master/entries/tiles.html) |
 
-- [Link de la página](https://onehtmlpagechallenge.com/entries/tiles.html)
-- [Link del código](https://github.com/Metroxe/one-html-page-challenge/blob/master/entries/tiles.html)
-
-Screen
-
-- [Link de la página](https://onehtmlpagechallenge.com/entries/my-screen-resolution.html)
-- [Link del código](https://github.com/Metroxe/one-html-page-challenge/blob/master/entries/my-screen-resolution.html)
+| Screen:                                                                                                               |
+|-----------------------------------------------------------------------------------------------------------------------|
+| - [Link de la página](https://onehtmlpagechallenge.com/entries/my-screen-resolution.html)                             |
+| - [Link del código](https://github.com/Metroxe/one-html-page-challenge/blob/master/entries/my-screen-resolution.html) |
 
 ```bash
 sudo cd /etc/nginx/sites-available
@@ -107,14 +107,42 @@ Para que todos estos archivos se guarden correctamente deberemos usar este coman
 sudo -s release nginx
 ```
 
-
-<img src="" alt="" width="">
+Ahora procederemos a introducir nuestro código html.Para esto deberemos ir al directorio *www* y crear las carpetas para cada web los cuales almacenaran el archivo *index.html* (nuestro código).
 
 ```bash
+cd /var/www
 ```
+```bash
+sudo mkdir puzzle
+```
+```bash
+sudo mkdir screen
+```
+ATENCIÓN: Los nombres de las carpetas deben coincidir con lso anteriores puestos en la configuración de los hosts
+
+Creamos el archivo y pegamos dentro el html. Esto se debe hacer por cada página.
+
+```bash
+sudo touck index.html
+```
+<img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/codigo%20html.png" alt="codigo" width="">
+
+Si todo esta xorrecto al ejecutar el comadno ``ll`` deberiamos ver lo siguiente:
+
+<img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/carpeta%20www.png" alt="carpeta www" width="">
+
+Finalemnte volvemos ejecutar el comando ``sudo -s release nginx`` para asegurar que el servidor guarde y actualize todo correctamente.
+
+Para la comprobación final nos iremos nuestro navegar, introduciremos el url de nuestras paginas: ``puzzle.melissarh.com`` y ``screen.melissarh.com`` .
+
+<img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/pagina%20puzzle.png" alt="pagina_puzzle" width="">
+
+<img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/pagina_screen.png" alt="" width="">
+
 <div id='recur' />
 
 ## Recursos
 
-[maquinas virtuales]: https://descargarmaquinasvirtuales.com
-[]: https://www.virtualbox.org/wiki/Downloads
+- Descargar VirtualBox. [Click aquí](https://www.virtualbox.org/wiki/Downloads)
+- Página para descargar archivos .ova, maquinas virtuales ya hechas y listas para trabajos. [Click aquí](https://descargarmaquinasvirtuales.com)
+- Página con diferentes códigos html. [Click aquí](https://onehtmlpagechallenge.com)
