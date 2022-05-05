@@ -87,6 +87,8 @@ Modificaciones(esto se hara por cada uno de los archivos):
 * Modificar el root apuntando a nuestro dominio
 * Modificar el server_name por nuestro dominio
 
+<img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/configuracion%20server.png" alt="" >
+
 <img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/configuracion%20puzzle.png" alt="configuracion_puzzle" width="">
 
 <img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/configuracion%20screen.png" width="">
@@ -131,7 +133,11 @@ Si todo esta xorrecto al ejecutar el comadno ``ll`` deberiamos ver lo siguiente:
 
 <img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/carpeta%20www.png" alt="carpeta www" width="">
 
-Finalemnte volvemos ejecutar el comando ``sudo -s release nginx`` para asegurar que el servidor guarde y actualize todo correctamente.
+Volvemos ejecutar el comando ``sudo -s release nginx`` para asegurar que el servidor guarde y actualize todo correctamente.
+
+Finalmente editamso el archivo *hosts* que se encunetra en el diretorio *etc* de nuestra maquina y introducimos nuestras direcciones webs con su ip, en este caso localhost.
+
+![hosts](https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/archivo%20hosts.png)
 
 Para la comprobación final nos iremos nuestro navegar, introduciremos el url de nuestras paginas: ``puzzle.melissarh.com`` y ``screen.melissarh.com`` .
 
