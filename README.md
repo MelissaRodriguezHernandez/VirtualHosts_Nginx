@@ -12,7 +12,7 @@
   
  <img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/Nginx_logo.svg.png" width="400" alt="logo nginx">
 
->Esta práctica se hara uso de Nginx, un servidor web ligero y eficiente. Con las bases de nuestro servidor procederemos a configurar dos virtual hosts y acceder a ellos usando diferentes subdominios.
+>Esta práctica se hará uso de Nginx, un servidor web ligero y eficiente. Con las bases de nuestro servidor procederemos a configurar dos virtual hosts y acceder a ellos usando diferentes subdominios.
 
 >Cosas a tener en cuenta:
 
@@ -20,7 +20,7 @@
               
 >*  Los archivos HTML son sacados de una página externa
               
->*  Todos las páginas y programas usados estan en el apartado de [recursos](#recur)
+>*  Todos las páginas y programas usados están en el apartado de [recursos](#recur)
                 
 
 <div id='instaN' />
@@ -39,16 +39,16 @@ Si todo a salido bien al introducir en nuestro navegador ``localhost`` o ``127.0
 <img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/welcome%20to%20nginx.png" width="600" alt="bienvenida nginx">
 
 
-***ATENCIÓN: Si la instalación da algun error ejecuta el comando ``apt update`` y vuelve a introducir el primer comando***
+***ATENCIÓN: Si la instalación da algún error ejecuta el comando ``apt update`` y vuelve a introducir el primer comando***
   
 <div id='confi' />
 
 ## Configuración Virtual Hosts
 
-Para empezar debemos ir al directorio *sites-available* de nginx y crearemos nuestros archivos para la configuración de los dos hosts. El nombre sera creado a base de esta plantilla *nombre_descriptivo_página.nombre_autor.com*.
-El nombre descriptivo dependeran de las páginas que elegimos.
+Para empezar debemos ir al directorio *sites-available* de nginx y crearemos nuestros archivos para la configuración de los dos hosts. El nombre será creado a base de esta plantilla *nombre_descriptivo_página.nombre_autor.com*.
+El nombre descriptivo dependen de las páginas que elegimos.
 
-Las páginas elegidas para esta practica són:
+Las páginas elegidas para esta práctica són:
 
 | Puzzle:                                                                                                |
 |--------------------------------------------------------------------------------------------------------|
@@ -81,9 +81,9 @@ Ahora procederemos a configurar los archivos que acabamos de crear. Los abrimos.
 ```bash
 sudo nano puzzle.melissarh.com
 ```
-Modificaciones(esto se hara por cada uno de los archivos):
+Modificaciones(esto se hará por cada uno de los archivos):
 
-* Quitar el default de las primeras lineas que empiezan por *listen* del server
+* Quitar el default de las primeras líneas que empiezan por *listen* del server
 * Modificar el root apuntando a nuestro dominio
 * Modificar el server_name por nuestro dominio
 
@@ -93,7 +93,7 @@ Modificaciones(esto se hara por cada uno de los archivos):
 
 <img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/configuracion%20screen.png" width="">
 
-Ahora procederemos a crear los mismo archivos pero en este caso en el directorio *sites-enabled*, estos archivos deberan tener el mismo nombre que los anteriores ya que estan correlacionados, como se ve en la siguiente imagen.
+Ahora procederemos a crear los mismo archivos pero en este caso en el directorio *sites-enabled*, estos archivos deberán tener el mismo nombre que los anteriores ya que están correlacionados, como se ve en la siguiente imagen.
 
 ```bash
 sudo cp default puzzle.melissarh.com
@@ -109,7 +109,7 @@ Para que todos estos archivos se guarden correctamente deberemos usar este coman
 sudo -s release nginx
 ```
 
-Ahora procederemos a introducir nuestro código html. Para esto deberemos ir al directorio *www* y crear las carpetas necesarias para cada web, las cuales almacenaran el archivo *index.html* (nuestro código).
+Ahora procederemos a introducir nuestro código html. Para esto deberemos ir al directorio *www* y crear las carpetas necesarias para cada web, las cuales almacenarán el archivo *index.html* (nuestro código).
 
 ```bash
 cd /var/www
@@ -129,17 +129,17 @@ sudo touch index.html
 ```
 <img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/codigo%20html.png" alt="codigo" width="">
 
-Si todo esta correcto al ejecutar el comadno ``ll`` deberiamos ver lo siguiente:
+Si todo está correcto al ejecutar el comando ``ll`` deberíamos ver lo siguiente:
 
 <img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/carpeta%20www.png" alt="carpeta www" width="">
 
-Volvemos ejecutar el comando ``sudo -s release nginx`` para asegurar que el servidor guarde y actualize todo correctamente.
+Volvemos a ejecutar el comando ``sudo -s release nginx`` para asegurar que el servidor guarde y actualize todo correctamente.
 
-Finalmente editamos el archivo *hosts* que se encunetra en el diretorio *etc* de nuestra maquina e introducimos nuestras direcciones webs con su ip, en este caso localhost.
+Finalmente editamos el archivo *hosts* que se encuentra en el directorio *etc* de nuestra máquina e introducimos nuestras direcciones webs con su ip, en este caso localhost.
 
 ![hosts](https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/archivo%20hosts.png)
 
-Para la comprobación final nos iremos a nuestro navegar, introduciremos el url de nuestras paginas: ``puzzle.melissarh.com`` y ``screen.melissarh.com``. Si todas las configuraciones se han hecho de forma correcta deberiamos tener 2 páginas funcionales.
+Para la comprobación final nos iremos a nuestro navegar, introduciremos el url de nuestras paginas: ``puzzle.melissarh.com`` y ``screen.melissarh.com``. Si todas las configuraciones se han hecho de forma correcta deberíamos tener 2 páginas funcionales.
 
 <img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/pagina%20puzzle.png" alt="pagina_puzzle" width="">
 
@@ -150,5 +150,5 @@ Para la comprobación final nos iremos a nuestro navegar, introduciremos el url 
 ## Recursos
 
 - Descargar VirtualBox. [Click aquí](https://www.virtualbox.org/wiki/Downloads)
-- Página para descargar archivos .ova, maquinas virtuales ya hechas y listas para trabajos. [Click aquí](https://descargarmaquinasvirtuales.com)
+- Página para descargar archivos .ova, máquinas virtuales ya hechas y listas para trabajos. [Click aquí](https://descargarmaquinasvirtuales.com)
 - Página con diferentes códigos html. [Click aquí](https://onehtmlpagechallenge.com)
