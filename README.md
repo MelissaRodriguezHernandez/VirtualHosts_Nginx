@@ -109,7 +109,7 @@ Para que todos estos archivos se guarden correctamente deberemos usar este coman
 sudo -s release nginx
 ```
 
-Ahora procederemos a introducir nuestro código html. Para esto deberemos ir al directorio *www* y crear las carpetas necesarias para cada web, lass cuales almacenaran el archivo *index.html* (nuestro código).
+Ahora procederemos a introducir nuestro código html. Para esto deberemos ir al directorio *www* y crear las carpetas necesarias para cada web, las cuales almacenaran el archivo *index.html* (nuestro código).
 
 ```bash
 cd /var/www
@@ -125,21 +125,21 @@ ATENCIÓN: Los nombres de las carpetas deben coincidir con lso anteriores puesto
 Creamos el archivo y pegamos dentro el html. Esto se debe hacer por cada página.
 
 ```bash
-sudo touck index.html
+sudo touch index.html
 ```
 <img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/codigo%20html.png" alt="codigo" width="">
 
-Si todo esta xorrecto al ejecutar el comadno ``ll`` deberiamos ver lo siguiente:
+Si todo esta correcto al ejecutar el comadno ``ll`` deberiamos ver lo siguiente:
 
 <img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/carpeta%20www.png" alt="carpeta www" width="">
 
 Volvemos ejecutar el comando ``sudo -s release nginx`` para asegurar que el servidor guarde y actualize todo correctamente.
 
-Finalmente editamso el archivo *hosts* que se encunetra en el diretorio *etc* de nuestra maquina y introducimos nuestras direcciones webs con su ip, en este caso localhost.
+Finalmente editamos el archivo *hosts* que se encunetra en el diretorio *etc* de nuestra maquina e introducimos nuestras direcciones webs con su ip, en este caso localhost.
 
 ![hosts](https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/archivo%20hosts.png)
 
-Para la comprobación final nos iremos nuestro navegar, introduciremos el url de nuestras paginas: ``puzzle.melissarh.com`` y ``screen.melissarh.com`` .
+Para la comprobación final nos iremos a nuestro navegar, introduciremos el url de nuestras paginas: ``puzzle.melissarh.com`` y ``screen.melissarh.com``. Si todas las configuraciones se han hecho de forma correcta deberiamos tener 2 páginas funcionales.
 
 <img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/pagina%20puzzle.png" alt="pagina_puzzle" width="">
 
