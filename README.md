@@ -106,7 +106,7 @@ sudo cp default screen.melissarh.com
 
 Para que todos estos archivos se guarden correctamente deberemos usar este comando
 ```bash
-sudo -s release nginx
+sudo -s reload nginx
 ```
 
 Ahora procederemos a introducir nuestro código html. Para esto deberemos ir al directorio *www* y crear las carpetas necesarias para cada web, las cuales almacenarán el archivo *index.html* (nuestro código).
@@ -133,7 +133,7 @@ Si todo está correcto al ejecutar el comando ``ll`` deberíamos ver lo siguient
 
 <img src="https://github.com/MelissaRodriguezHernandez/VirtualHosts_Nginx/blob/main/img/carpeta%20www.png" alt="carpeta www" width="">
 
-Volvemos a ejecutar el comando ``sudo -s release nginx`` para asegurar que el servidor guarde y actualize todo correctamente.
+Volvemos a ejecutar el comando ``sudo -s reload nginx`` para asegurar que el servidor guarde y actualize todo correctamente.
 
 Finalmente editamos el archivo *hosts* que se encuentra en el directorio *etc* de nuestra máquina e introducimos nuestras direcciones webs con su ip, en este caso localhost.
 
